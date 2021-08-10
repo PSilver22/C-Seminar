@@ -1,0 +1,5 @@
+﻿  Question 5.c
+C:\Users\pinny\Desktop\School\Advanced C Workshop\Homeworks\C Homework 1\Question 5\Functions.h(16,30): warning C4013: 'malloc' undefined; assuming extern returning int
+C:\Users\pinny\Desktop\School\Advanced C Workshop\Homeworks\C Homework 1\Question 5\Functions.h(16,1): warning C4047: 'initializing': 'int *' differs in levels of indirection from 'int'
+C:\Users\pinny\Desktop\School\Advanced C Workshop\Homeworks\C Homework 1\Question 5\Functions.h(23): warning C4716: 'intToArray': must return a value
+  Question 5.vcxproj -> C:\Users\pinny\Desktop\School\Advanced C Workshop\Homeworks\C Homework 1\x64\Debug\Question 5.exe
