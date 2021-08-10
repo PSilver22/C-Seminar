@@ -1,6 +1,0 @@
-﻿  Question 1.c
-C:\Users\pinny\Desktop\School\Advanced C Workshop\Homeworks\C Homework 1\Question 1\Question 1.c(11,17): warning C4473: 'scanf_s' : not enough arguments passed for format string
-C:\Users\pinny\Desktop\School\Advanced C Workshop\Homeworks\C Homework 1\Question 1\Question 1.c(11,17): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
-C:\Users\pinny\Desktop\School\Advanced C Workshop\Homeworks\C Homework 1\Question 1\Question 1.c(11,17): message : the missing variadic argument 2 is required by format string '%c'
-C:\Users\pinny\Desktop\School\Advanced C Workshop\Homeworks\C Homework 1\Question 1\Question 1.c(11,17): message : this argument is used as a buffer size
-  Question 1.vcxproj -> C:\Users\pinny\Desktop\School\Advanced C Workshop\Homeworks\C Homework 1\Debug\Question 1.exe
