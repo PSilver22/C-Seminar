@@ -1,0 +1,83 @@
+\hypertarget{_question_016_2luhn_algorithm_8c}{}\doxysection{Homework 1/\+Question 6/luhn\+Algorithm.c File Reference}
+\label{_question_016_2luhn_algorithm_8c}\index{Homework 1/Question 6/luhnAlgorithm.c@{Homework 1/Question 6/luhnAlgorithm.c}}
+{\ttfamily \#include \char`\"{}luhn\+Algorithm.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+Bool \mbox{\hyperlink{_question_016_2luhn_algorithm_8c_aa20bbc2e15d4d8466856b97a15531b6a}{has\+NDigits}} (int number, int N)
+\begin{DoxyCompactList}\small\item\em Checks if the given number has N digits. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_question_016_2luhn_algorithm_8c_ab3a6539e30fd1ec979f8af3cc3eac065}{setup\+Luhn\+Number}} (int number, \+\_\+\+Bool second\+Digit)
+\begin{DoxyCompactList}\small\item\em A recursive function to setup a given number for the Luhn algorithm. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_question_016_2luhn_algorithm_8c_ae3c9d960b0c4f97aedb50f9272dd189c}{sum\+Of\+Digits}} (int number)
+\begin{DoxyCompactList}\small\item\em Calculates the sum the digits of a number. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_question_016_2luhn_algorithm_8c_aa12657861d41e5855606a9917551326a}{calculate\+Check\+Digit}} (int start\+Of\+Id)
+\begin{DoxyCompactList}\small\item\em Calculates the check digit of an id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_question_016_2luhn_algorithm_8c_aa12657861d41e5855606a9917551326a}\label{_question_016_2luhn_algorithm_8c_aa12657861d41e5855606a9917551326a}} 
+\index{luhnAlgorithm.c@{luhnAlgorithm.c}!calculateCheckDigit@{calculateCheckDigit}}
+\index{calculateCheckDigit@{calculateCheckDigit}!luhnAlgorithm.c@{luhnAlgorithm.c}}
+\doxysubsubsection{\texorpdfstring{calculateCheckDigit()}{calculateCheckDigit()}}
+{\footnotesize\ttfamily int calculate\+Check\+Digit (\begin{DoxyParamCaption}\item[{int}]{start\+Of\+Id }\end{DoxyParamCaption})}
+
+
+
+Calculates the check digit of an id. 
+
+Starts with the Luhn algorithm as seen previously, but with an 8 digit number.~\newline
+Using the sum of digits that is gotten from the algorithm, it finds what number is needed to reach a power of 10. \mbox{\Hypertarget{_question_016_2luhn_algorithm_8c_aa20bbc2e15d4d8466856b97a15531b6a}\label{_question_016_2luhn_algorithm_8c_aa20bbc2e15d4d8466856b97a15531b6a}} 
+\index{luhnAlgorithm.c@{luhnAlgorithm.c}!hasNDigits@{hasNDigits}}
+\index{hasNDigits@{hasNDigits}!luhnAlgorithm.c@{luhnAlgorithm.c}}
+\doxysubsubsection{\texorpdfstring{hasNDigits()}{hasNDigits()}}
+{\footnotesize\ttfamily \+\_\+\+Bool has\+NDigits (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{int}]{N }\end{DoxyParamCaption})}
+
+
+
+Checks if the given number has N digits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & The number to check the amount of digits. \\
+\hline
+{\em N} & The size to check the given number for. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_question_016_2luhn_algorithm_8c_ab3a6539e30fd1ec979f8af3cc3eac065}\label{_question_016_2luhn_algorithm_8c_ab3a6539e30fd1ec979f8af3cc3eac065}} 
+\index{luhnAlgorithm.c@{luhnAlgorithm.c}!setupLuhnNumber@{setupLuhnNumber}}
+\index{setupLuhnNumber@{setupLuhnNumber}!luhnAlgorithm.c@{luhnAlgorithm.c}}
+\doxysubsubsection{\texorpdfstring{setupLuhnNumber()}{setupLuhnNumber()}}
+{\footnotesize\ttfamily int setup\+Luhn\+Number (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{\+\_\+\+Bool}]{second\+Digit }\end{DoxyParamCaption})}
+
+
+
+A recursive function to setup a given number for the Luhn algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & The number to setup. \\
+\hline
+{\em second\+Digit} & A boolean stating if the current digit should be multiplied by 2 according to the algorithm. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number updated for Luhn algorithm. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_question_016_2luhn_algorithm_8c_ae3c9d960b0c4f97aedb50f9272dd189c}\label{_question_016_2luhn_algorithm_8c_ae3c9d960b0c4f97aedb50f9272dd189c}} 
+\index{luhnAlgorithm.c@{luhnAlgorithm.c}!sumOfDigits@{sumOfDigits}}
+\index{sumOfDigits@{sumOfDigits}!luhnAlgorithm.c@{luhnAlgorithm.c}}
+\doxysubsubsection{\texorpdfstring{sumOfDigits()}{sumOfDigits()}}
+{\footnotesize\ttfamily int sum\+Of\+Digits (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+Calculates the sum the digits of a number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sum of digits of a number. 
+\end{DoxyReturn}

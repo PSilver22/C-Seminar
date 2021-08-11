@@ -1,7 +1,8 @@
-/// @dir .\
-/// @author Pinny Silver\n
+/// @mainpage
+/// @author Pinny Silver
 /// @date 8/11/21
-/// Course: C Workshop\n
+/// @par Course
+/// C Workshop
 #include <stdio.h>
 #include "isQ.h"
 
