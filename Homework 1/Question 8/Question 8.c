@@ -1,14 +1,6 @@
-/*
-=============================================
-Author: Pinny Silver
-Course: C Workshop
-Assignment: Homework 1, Question 8
-Description: Inputs a stream of numbers, terminated on 0, and prints the second to biggest/smallest numbers.
-=============================================
-*/
-
 #include <stdio.h>
 
+/// @brief Inputs a stream of numbers, terminated on 0, and prints the second to biggest/smallest numbers.
 int main()
 {
     int max = 0;
@@ -44,7 +36,14 @@ int main()
 
     } while (input != 0);
 
-    printf("Second to min: %d\nSecond to max: %d", secondToMin, secondToMax);
+    if (secondToMin == 0 || secondToMax == 0)
+    {
+        printf("No result");
+    }
+    else
+    {
+        printf("Second to min: %d\nSecond to max: %d", secondToMin, secondToMax);
+    }
     
     return 0;
 }
