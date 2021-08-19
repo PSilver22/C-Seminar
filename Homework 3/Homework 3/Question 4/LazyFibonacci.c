@@ -1,21 +1,33 @@
 #include "LazyFibonacci.h"
 #include <stdlib.h>
 
-uint lazyFibonacci(uint n)
+#define MAX_SIZE 100
+
+fiboNum_t lazyFibonacci(fiboNum_t n)
 {
     // create array with beginning of fibonacci sequence
-    uint* fiboNumbers = malloc((n + 1) * sizeof(uint));
-    fiboNumbers[0] = 0, fiboNumbers[1] = 1;
+    static fiboNum_t fiboNumbers[MAX_SIZE] = { 0, 1 };
+    static size_t fiboNumSize = 2;
 
-    // fill in the rest of the array until the nth element
-    for (size_t index = 2; index <= n; ++index)
+    // if the result already exists, don't calculate
+    fiboNum_t result;
+    if (n <= fiboNumSize)
     {
-        fiboNumbers[index] = fiboNumbers[index - 1] + fiboNumbers[index - 2];
+        result = fiboNumbers[n];
     }
 
-    // get the last number in the sequence
-    uint result = fiboNumbers[n];
+    // if the results don't exist, calculate from the last value
+    else
+    {
+        for (size_t index = fiboNumSize; index <= n; ++index)
+        {
+            fiboNumbers[index] = fiboNumbers[index - 1] + fiboNumbers[index - 2];
+        }
 
-    free(fiboNumbers);
+        fiboNumSize = n;
+
+        result = fiboNumbers[n];
+    }
+
     return result;
 }
