@@ -1,4 +1,5 @@
 #include "stddef.h"
+#include <stdarg.h>
 
 #ifndef _REVERSE_H_
 #define _REVERSE_H_

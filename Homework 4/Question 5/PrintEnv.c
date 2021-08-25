@@ -1,6 +1,6 @@
 #include "Environment.h"
 
-int main(int argc, char *argv[], char *envp[])
+int main(size_t argc, char *argv[], char *envp[])
 {
     if (argc != 2)
     {
