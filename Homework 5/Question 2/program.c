@@ -6,6 +6,8 @@ int main(void)
     Number num1 = inputNumber();
 
     _Bool running = 1;
+
+    // perform inputted operations
     while (running)
     {
         Number num2;
@@ -41,6 +43,7 @@ int main(void)
         }
     }
 
+    // print out final result for all of the operations.
     printNumber(num1);
     
     return 0;

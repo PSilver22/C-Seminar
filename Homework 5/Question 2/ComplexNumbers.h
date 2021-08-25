@@ -1,8 +1,6 @@
 #ifndef _COMPLEX_NUMBERS_H_
 #define _COMPLEX_NUMBERS_H_
 
-#define square(num) (num) * (num)
-
 /// @brief Structure for numbers of the format a + bi
 typedef struct ComplexNumber_t
 {
@@ -52,7 +50,7 @@ Number negative(Number num);
 
 /// @brief Inputs a number. Checks if it should be complex or not.
 /// @return the inputted number
-Number inputNumber();
+Number inputNumber(void);
 
 /// @brief Print number
 /// @param num 

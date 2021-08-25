@@ -58,7 +58,7 @@ Number add(Number a, Number b)
         double real = (!a.isComplex) ? a.NumberType.real : b.NumberType.real;
 
         result.NumberType.complex.imaginary = complex.imaginary;
-        result.NumberType.complex.real = real + complex.real;
+        result.NumberType.complex.real = (float) real + complex.real;
     }
 
     else
@@ -127,8 +127,8 @@ Number divide(Number dividend, Number divisor)
     {
         result.isComplex = 1;
 
-        result.NumberType.complex.imaginary = dividend.NumberType.complex.imaginary / divisor.NumberType.real;
-        result.NumberType.complex.real = dividend.NumberType.complex.real / divisor.NumberType.real;
+        result.NumberType.complex.imaginary = dividend.NumberType.complex.imaginary / (float) divisor.NumberType.real;
+        result.NumberType.complex.real = dividend.NumberType.complex.real / (float) divisor.NumberType.real;
     }
 
     else
@@ -147,7 +147,7 @@ Number divide(Number dividend, Number divisor)
     return result;
 }
 
-Number inputNumber()
+Number inputNumber(void)
 {
     int response;
     printf("Complex or real number (1/2):\n");
