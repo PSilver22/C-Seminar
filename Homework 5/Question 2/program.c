@@ -45,8 +45,6 @@ int main(void)
 
         printNumber(num1);
     }
-
-    // print out final result for all of the operations.
     
     return 0;
 }
