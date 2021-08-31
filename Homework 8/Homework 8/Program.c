@@ -24,7 +24,7 @@ int main(size_t argc, char *argv[])
     // create a new folder with the file name in the file directory
     char *strippedFileName = stripFileExtension(fileName);
     createFolder(outputDirectory, strippedFileName);
-    
+
     // add the new folder to the output directory
     char *temp = outputDirectory;
     outputDirectory = concatDir(outputDirectory, strippedFileName);
